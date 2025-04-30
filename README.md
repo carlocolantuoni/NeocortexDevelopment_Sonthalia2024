@@ -21,6 +21,9 @@ Installation instructions and code for projection analysis using projectR (https
 youtube playlist for NeMO Analytics tutorials: xxxxxxx.com
 
 Additional help can be found on NeMO Analytics webisite itself:
+
 https://nemoanalytics.org/upload_dataset.html
+
 https://nemoanalytics.org/dataset_explorer.html
+
 https://nemoanalytics.org/gene_list_manager.html
