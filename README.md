@@ -23,7 +23,7 @@ Installation instructions and code for projection analysis using projectR (https
 youtube playlist for NeMO Analytics tutorials: https://www.youtube.com/playlist?list=PLbeFhDgIkXxe0G1hzEB_vLSP-5qqesNQj
 
 
-Additional help can be found on NeMO Analytics webisite itself:
+Additional help can be found on the github site for gEAR, the platform on which NeMO Analytics is built (https://github.com/IGS/gEAR/wiki) and on NeMO Analytics webisite itself:
 
 https://nemoanalytics.org/upload_dataset.html
 
