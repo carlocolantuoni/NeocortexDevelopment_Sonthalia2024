@@ -3,11 +3,11 @@ Repository for analyses performed in "A Curated Compendium of Transcriptomic Dat
 
 Interactive, public data exploration resources can be found at: https://nemoanalytics.org/landing/neocortex/
 
-Data aquisition from NeMO Anlaytics and Joint decomposition in Figure 1 & 2: xxxxxxxxxxxx.R
+Data aquisition from NeMO Anlaytics and Joint decomposition performed in Figure 1 & 2: xxxxxxxxxxxx.R
 
-Data aquisition from NeMO Anlaytics and Joint decomposition in Figure 3: xxxxxxxxxxxx.R
+Data aquisition from NeMO Anlaytics and Joint decomposition performed in Figure 3: xxxxxxxxxxxx.R
 
-Data aquisition from NeMO Anlaytics and Joint decomposition in Figures 4, 5, & 6: xxxxxxxxxxxx.R
+Data aquisition from NeMO Anlaytics and Joint decomposition performed in Figures 4, 5, & 6: xxxxxxxxxxxx.R
 
 Installation instructions and code for joint matrix decomposition using the SJD package (https://www.biorxiv.org/content/10.1101/2022.11.07.515489v1) can be found here: https://github.com/CHuanSite/SJD
 
