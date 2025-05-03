@@ -7,11 +7,9 @@ Interactive, public data exploration resources can be found at: https://nemoanal
 youtube playlist for video walk-throughs of the figures in our manuscript: https://www.youtube.com/playlist?list=xxxxxxxxxxxxxxxxxxxxxx
 
 
-Data aquisition from NeMO Anlaytics and Joint decomposition performed in Figure 1 & 2: xxxxxxxxxxxx.R
+Data aquisition from NeMO Anlaytics and Joint decomposition performed for analysis in Figures 1, 2 & 3: SJDcode_Figure1n2n3.R
 
-Data aquisition from NeMO Anlaytics and Joint decomposition performed in Figure 3: xxxxxxxxxxxx.R
-
-Data aquisition from NeMO Anlaytics and Joint decomposition performed in Figures 4, 5, & 6: xxxxxxxxxxxx.R
+Data aquisition from NeMO Anlaytics and Joint decomposition performed for analysis in Figures 4, 5, & 6: SJDcode_Figure4n5n6.R
 
 Conda environment and associated packages used in the pesudotime analysis can be recreated using the Seurat5_R4_3_0.yml file (https://github.com/carlocolantuoni/NeocortexDevelopment_Sonthalia2024/blob/main/Seurat5_R4_3_0.yml) and the command "conda env create -f Seurat5_R4_3_0.yml".
 
