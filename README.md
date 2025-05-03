@@ -4,7 +4,7 @@ Repository for analyses performed in "A Curated Compendium of Transcriptomic Dat
 
 Interactive, public data exploration resources can be found at: https://nemoanalytics.org/landing/neocortex/
 
-youtube playlist for video walk-throughs of the figures in our manuscript: xxxxxxx.com
+youtube playlist for video walk-throughs of the figures in our manuscript: https://www.youtube.com/playlist?list=PLbeFhDgIkXxe0G1hzEB_vLSP-5qqesNQj
 
 
 Data aquisition from NeMO Anlaytics and Joint decomposition performed in Figure 1 & 2: xxxxxxxxxxxx.R
