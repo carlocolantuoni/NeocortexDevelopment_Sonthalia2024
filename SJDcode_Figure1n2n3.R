@@ -14,7 +14,7 @@ wget https://nemoanalytics.org/datasets/b83c20a8-7438-91f4-0119-a59a6f864c35.h5a
 library(anndata)
 musmus <- read_h5ad("/path/a547e37d-ca70-e666-c8c1-294f8640ab09.h5ad")# La Manno 2021
 macmul <- read_h5ad("/path/ff1f963d-65ea-4d13-8917-838b725d6c07.h5ad")# Micali 2023
-homsap <- read_h5ad("/path/b83c20a8-7438-91f4-0119-a59a6f864c35.h5ad")# Treino 2021
+homsap <- read_h5ad("/path/b83c20a8-7438-91f4-0119-a59a6f864c35.h5ad")# Trevino 2021
 
 ###############################################################################
 # assemble data for joint decomposition
@@ -153,7 +153,7 @@ dev.off()
 ########
 # 40 dimension decomposition
 dims=c(40)# must have same length as "grp"
-lbb2=paste(lbb1,"p",dims[1],dims[2],dims[3],sep=".")
+lbb2=paste(lbb1,"p",dims[1],sep=".")
 print(Sys.time())
 jointNMF=jointNMF(dataset=SJDdataIN,group=grp,comp_num=dims)#,proj_dataset=SJDdataIN,proj_group=grpP
 print(Sys.time())
