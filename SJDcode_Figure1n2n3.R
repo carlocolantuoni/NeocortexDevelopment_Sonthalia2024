@@ -108,7 +108,7 @@ geneType.out="ensembl",species.out="human"
 # we found 15625 shared genes in 3 datasets
 # new data list of 3 datasets constructed
 
-str(SJDdataIN)# -  - original decomp had 15469 gene across 3 species - this has 15625
+str(SJDdataIN)
 lapply(SJDdataIN,dim)
 # $laManno
 # [1] 15625 38668
