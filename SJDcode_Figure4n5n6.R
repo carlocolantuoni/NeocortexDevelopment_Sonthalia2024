@@ -98,7 +98,7 @@ SJDdataIN=sjdWrap(
   geneType.vector=c("ensembl","ensembl","ensembl","ensembl","ensembl"),
   geneType.out="ensembl",species.out="human")
 
-str(SJDdataIN)# -  - original decomp had 14272 gene across 3 matrices - this has 14088
+str(SJDdataIN)
 lapply(SJDdataIN,dim)
 # $jor1
 # [1] 14088  6658
