@@ -11,7 +11,7 @@ Data aquisition from NeMO Anlaytics and Joint decomposition performed for analys
 
 Data aquisition from NeMO Anlaytics and Joint decomposition performed for analysis in Figures 4, 5, & 6: SJDcode_Figure4n5n6.R
 
-GeneCart2idCols.R is a function used in the SJD code above
+GeneCart2idCols.R is a function used in the SJD code (SJDcode_Figure1n2n3.R & SJDcode_Figure4n5n6.R) to create files for the import of joint decomposition results into NeMO Analytics as gene lists for projection.
 
 Conda environment and associated packages used in the pesudotime analysis can be recreated using the Seurat5_R4_3_0.yml file (https://github.com/carlocolantuoni/NeocortexDevelopment_Sonthalia2024/blob/main/Seurat5_R4_3_0.yml) and the command "conda env create -f Seurat5_R4_3_0.yml".
 
@@ -24,9 +24,6 @@ youtube playlist for NeMO Analytics tutorials: https://www.youtube.com/playlist?
 
 
 Additional help can be found on the github site for gEAR, the platform on which NeMO Analytics is built (https://github.com/IGS/gEAR/wiki) and on NeMO Analytics webisite itself:
-
 https://nemoanalytics.org/upload_dataset.html
-
 https://nemoanalytics.org/dataset_explorer.html
-
 https://nemoanalytics.org/gene_list_manager.html
