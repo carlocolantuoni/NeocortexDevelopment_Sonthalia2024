@@ -134,12 +134,12 @@ write.table(tbl2,row.names=FALSE,col.names=TRUE,sep="\t",file=paste0(baseDIR,lbb
 library(ggplot2)
 library(gridExtra)
 alg="jointNMF"
-scrs=jointNMF$score_list;grp=names(scrs[[1]])[1];kt=dim(scrs[[1]][[grp]])[1];kk=1:kt;Nrows=length(kk)
+scrs=jointNMF$score_list;grpp=names(scrs[[1]])[1];kt=dim(scrs[[1]][[grpp]])[1];kk=1:kt;Nrows=length(kk)
 Ncols=length(scrs)
 SJDScorePlotter.obj=SJDScorePlotter(SJDalg=alg,scores=scrs,lbb=lbb2,info=META.list,SampleMetaNamesTable=SampleMetaNamesTable)
 assemble.byComponent=assemble.byComponent(SJDScorePlotter.obj=SJDScorePlotter.obj,component=kk,SJD_algorithm=alg,group='shared_all')
 adj=5
-pdf(width=Ncols*adj,height=Nrows*adj,paste0(baseDIR,"SJDdataOUT_",lbb2,"_",alg,"_",grp,"_k",kk[1],".to.",kk[length(kk)],"of",kt,"new.pdf"))
+pdf(width=Ncols*adj,height=Nrows*adj,paste0(baseDIR,"SJDdataOUT_",lbb2,"_",alg,"_",grpp,"_k",kk[1],".to.",kk[length(kk)],"of",kt,"new.pdf"))
 g = grid.arrange(grobs=assemble.byComponent,nrow=Nrows,ncol=Ncols)
 dev.off()
 
