@@ -24,6 +24,6 @@ youtube playlist for NeMO Analytics tutorials: https://www.youtube.com/playlist?
 
 
 Additional help can be found on the github site for gEAR, the platform on which NeMO Analytics is built (https://github.com/IGS/gEAR/wiki) and on NeMO Analytics webisite itself:
-https://nemoanalytics.org/upload_dataset.html
-https://nemoanalytics.org/dataset_explorer.html
+https://nemoanalytics.org/upload_dataset.html; 
+https://nemoanalytics.org/dataset_explorer.html; & 
 https://nemoanalytics.org/gene_list_manager.html
