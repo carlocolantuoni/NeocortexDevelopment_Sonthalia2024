@@ -3,15 +3,15 @@
 #
 cd /path/
 # jorstad 2023: 
-wget https://nemoanalytics.org/datasets/e5dcba0a-07e5-c774-2f58-279acb74e1c7.h5ad
+wget -O Jorstad.h5ad 'https://nemoanalytics.org/cgi/download_source_file.cgi?type=h5ad&share_id=bcfb48b1'
 # bakken 2021: 
-wget https://nemoanalytics.org/datasets/69520ae8-8b1d-2a16-1118-9be6b66d4c58.h5ad
+wget -O Bakken.h5ad 'https://nemoanalytics.org/cgi/download_source_file.cgi?type=h5ad&share_id=0b665d58'
 
 ##############################################################################################################################################################
 # # begin R
 library(anndata)
-jor <- read_h5ad("/path/e5dcba0a-07e5-c774-2f58-279acb74e1c7.h5ad")
-bak <- read_h5ad("/path/69520ae8-8b1d-2a16-1118-9be6b66d4c58.h5ad")
+jor <- read_h5ad("/path/Jorstad.h5ad")
+bak <- read_h5ad("/path/Bakken.h5ad")
 
 #indices to later split into individal donor matrices
 str(jor$obs)
@@ -145,5 +145,6 @@ dev.off()
 
 #####################
 quit(save='no')
+
 
 
