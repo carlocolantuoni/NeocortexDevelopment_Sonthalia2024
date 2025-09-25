@@ -2,19 +2,19 @@
 # # wgets from nemo for fig 1/2/3: from unix command line
 #
 cd /path/
-# lamanno: 
-wget https://nemoanalytics.org/datasets/a547e37d-ca70-e666-c8c1-294f8640ab09.h5ad
+# lamanno:
+wget -O LaManno.h5ad 'https://nemoanalytics.org/cgi/download_source_file.cgi?type=h5ad&share_id=dfda4722'
 # micali: 
-wget https://nemoanalytics.org/datasets/ff1f963d-65ea-4d13-8917-838b725d6c07.h5ad
+wget -O Micali.h5ad 'https://nemoanalytics.org/cgi/download_source_file.cgi?type=h5ad&share_id=e9947c2c'
 # trevino: 
-wget https://nemoanalytics.org/datasets/b83c20a8-7438-91f4-0119-a59a6f864c35.h5ad
+wget -O Trevino.h5ad 'https://nemoanalytics.org/cgi/download_source_file.cgi?type=h5ad&share_id=b63f99b1'
 
 ##############################################################################################################################################################
 # # begin R
 library(anndata)
-musmus <- read_h5ad("/path/a547e37d-ca70-e666-c8c1-294f8640ab09.h5ad")# La Manno 2021
-macmul <- read_h5ad("/path/ff1f963d-65ea-4d13-8917-838b725d6c07.h5ad")# Micali 2023
-homsap <- read_h5ad("/path/b83c20a8-7438-91f4-0119-a59a6f864c35.h5ad")# Trevino 2021
+musmus <- read_h5ad("/path/LaManno.h5ad")# La Manno 2021
+macmul <- read_h5ad("/path/Micali.h5ad")# Micali 2023
+homsap <- read_h5ad("/path/Trevino.h5ad")# Trevino 2021
 
 ###############################################################################
 # assemble data for joint decomposition
@@ -180,4 +180,5 @@ dev.off()
 
 #####################
 quit(save='no')
+
 
