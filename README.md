@@ -28,3 +28,5 @@ Additional help can be found on the github site for gEAR, the platform on which 
 https://nemoanalytics.org/upload_dataset.html; 
 https://nemoanalytics.org/dataset_explorer.html; & 
 https://nemoanalytics.org/gene_list_manager.html
+
+For more general info on dataset collections and computational tools go to: https://www.carlocolantuoni.org/
