@@ -1,11 +1,12 @@
 # NeocortexDevelopment_Sonthalia2024
 
-Repository for analyses performed in "A Curated Compendium of Transcriptomic Data for the Exploration of Neocortical Development" (https://doi.org/10.1101/2024.02.26.581612).
+Repository for analyses performed in "NeMO Analytics: A Compendium of Transcriptomic Data for the Exploration of Neocortical Development" (https://doi.org/10.1101/2024.02.26.581612).
 
 10min video summary of our manuscript: https://youtu.be/IE3itucbig4
 
 Interactive, public data exploration resources can be found at: https://nemoanalytics.org/landing/neocortex/
 
+Full listing of datasets in NeMO Analytics: https://docs.google.com/spreadsheets/d/1xag_73Y1xydcCUnDYwn8rlF2rEbbMdTw/
 
 Data aquisition from NeMO Anlaytics and Joint decomposition performed for analysis in Figures 1, 2 & 3: SJDcode_Figure1n2n3.R
 
