@@ -61,7 +61,7 @@ gene_metadata_all_cell_types <- getMatch(rownames(logNormalized_10k_all_cell_typ
 
 ## 3. Run the function
 
-`Counts.IN.SeuratDimRedNeMO.OUT.TRIM.R` prepares processed expression data and associated metadata for upload to the NeMO Analytics platform. It takes in a gene expression matrix, cell/sample metadata, and gene metadata, and then packages these inputs into NeMO-compatible outputs. The function generates both an .xlsx metadata file and a .tar.gz data archive, which can be uploaded to NeMO Platform. 
+`exprs.IN_NeMO.OUT.R` prepares processed expression data and associated metadata for upload to the NeMO Analytics platform. It takes in a gene expression matrix, cell/sample metadata, and gene metadata, and then packages these inputs into NeMO-compatible outputs. The function generates both an .xlsx metadata file and a .tar.gz data archive, which can be uploaded to NeMO Platform. 
 
 The next section will explain each of the arguments in the `exprs.IN_NeMO.OUT.R` function
 
