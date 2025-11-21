@@ -19,6 +19,8 @@ Gene loadings from the 3 decompositions in the paper:
 
 R code used for performing gene set enrichment analysis: GSEAcode_SonthaliaEtAl.R
 
+Gene lists used in the GSEA were obtained from: https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2023.1.Hs/ and CtxDiseaseGeneListsPLUS.RData from PMID: 40634286
+
 GeneCart2idCols.R is a function used in the SJD code (SJDcode_Figure1n2n3.R & SJDcode_Figure4n5n6.R) to create files for the import of joint decomposition results into NeMO Analytics as gene lists for projection.
 
 Conda environment and associated packages used in the pesudotime analysis can be recreated using the Seurat5_R4_3_0.yml file (https://github.com/carlocolantuoni/NeocortexDevelopment_Sonthalia2024/blob/main/Seurat5_R4_3_0.yml) and the command "conda env create -f Seurat5_R4_3_0.yml".
