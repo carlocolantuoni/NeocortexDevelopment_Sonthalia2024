@@ -12,6 +12,11 @@ Data aquisition from NeMO Anlaytics and Joint decomposition performed for analys
 
 Data aquisition from NeMO Anlaytics and Joint decomposition performed for analysis in Figures 4, 5, & 6: SJDcode_Figure4n5n6.R
 
+Gene loadings from the 3 decompositions in the paper:
+  SonthaliaEtAl_SupplTable1_p7CtxDev_GeneLoadings.txt
+  SonthaliaEtAl_SupplTable2_p40CtxDev_GeneLoadings.txt
+  SonthaliaEtAl_SupplTable3_p20CtxLayers_GeneLoadings.txt
+
 R code used for performing gene set enrichment analysis: GSEAcode_SonthaliaEtAl.R
 
 GeneCart2idCols.R is a function used in the SJD code (SJDcode_Figure1n2n3.R & SJDcode_Figure4n5n6.R) to create files for the import of joint decomposition results into NeMO Analytics as gene lists for projection.
