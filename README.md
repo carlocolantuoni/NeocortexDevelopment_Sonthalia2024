@@ -30,6 +30,10 @@ Installation instructions and code for joint matrix decomposition using the SJD 
 
 Installation instructions and code for projection analysis using projectR (https://academic.oup.com/bioinformatics/article/36/11/3592/5804979) can be found here: https://www.bioconductor.org/packages/release/bioc/html/projectR.html
 
+R function for getting data into a format that can be uploaded to NeMO Analytics: exprs.IN_NeMO.OUT.R
+
+python function for getting data into a format that can be uploaded to NeMO Analytics: **** Qingjie's FUNCTION HERE ****
+
 youtube playlist for NeMO Analytics tutorials: https://www.youtube.com/playlist?list=PLbeFhDgIkXxe0G1hzEB_vLSP-5qqesNQj
 
 
