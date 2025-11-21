@@ -1,6 +1,6 @@
 # Standardize and reformat the Multi-Omics data using NeMO Function
 
-  This document explains how to prepare inputs and run the **NeMO.TRIM function** (`Counts.IN.SeuratDimRedNeMO.OUT.TRIM.R`). The output of the (`Counts.IN.SeuratDimRedNeMO.OUT.TRIM.R`)
+  This document explains how to prepare inputs and run the **NeMO.TRIM function** (`exprs.IN_NeMO.OUT.R`). The output of the (`exprs.IN_NeMO.OUT.R`)
   can then be directly uploaded onto (`NeMOanalytics.org`)
 
 ---
@@ -21,7 +21,7 @@ library(SJD)
 ### 2.1 Expression matrix
 The expression matrix stores the processed count data, formatted as genes × cells/samples (i.e., rows represent gene names, columns represent sample or cell identifiers).
 
-Unlike the `Counts.IN.SeuratDimRedNeMO.OUT.R function`, the `Counts.IN.SeuratDimRedNeMO.OUT.TRIM.R` function does not include a built-in normalization argument for raw datasets. Therefore, it is essential to ensure that your dataset has already been fully processed before extracting and providing the expression matrix as input.
+The `exprs.IN_NeMO.OUT.R` function does not include a built-in normalization argument for raw datasets. Therefore, it is essential to ensure that your dataset has already been fully processed before extracting and providing the expression matrix as input.
 
 Here, we demonstrate two commonly encountered examples for scRNA-seq and BulkRNA-seq, respectively. 
 - scRNA-seq: If your dataset has been processed in Seurat and saved as a Seurat object, the normalized count matrix stored in the assay’s "data" slot is already formatted as genes × cells (depending on what version of Seurat you used).
@@ -63,7 +63,7 @@ gene_metadata_all_cell_types <- getMatch(rownames(logNormalized_10k_all_cell_typ
 
 `Counts.IN.SeuratDimRedNeMO.OUT.TRIM.R` prepares processed expression data and associated metadata for upload to the NeMO Analytics platform. It takes in a gene expression matrix, cell/sample metadata, and gene metadata, and then packages these inputs into NeMO-compatible outputs. The function generates both an .xlsx metadata file and a .tar.gz data archive, which can be uploaded to NeMO Platform. 
 
-The next section will explain each of the arguments in the `Counts.IN.SeuratDimRedNeMO.OUT.TRIM.R` function
+The next section will explain each of the arguments in the `exprs.IN_NeMO.OUT.R` function
 
 - sampLAB: A short tag used to label output files.
 - exprs: The processed expression matrix (genes × samples), with normalized values (not raw counts).
@@ -97,7 +97,7 @@ The next section will explain each of the arguments in the `Counts.IN.SeuratDimR
 - TARball.flag: If TRUE, generates a .tar.gz archive of the expression data.
 
 ```r
-CntsIN.seurNeMOoutTRIM(
+exprs.IN_NeMO.OUT(
     sampLAB ="Green_Nature_2024_microglia", 
     exprs = exprs_all_cell_type,           
     cellMETA= cellMETA_all_cell_types,      
