@@ -104,7 +104,7 @@ exprs.IN_NeMO.OUT(
     geneMETA = geneMETA_all_cell_types,    
     geneMETA.symbol.column="genes",
     geneMETA.ensembl.column="Gene.stable.ID.human",      
-    baseDIR=/path/to/file/
+    baseDIR="/path/to/file/"
     cnvrtDUPna.flag=TRUE,
     nemoMETA.title="Title for the dataset,
     nemoMETA.summary="short description for the study and dataset, preferably including the study design, number of control and        experimental groups, number of cell types, number of cells, etc. ",
