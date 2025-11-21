@@ -6,8 +6,6 @@ Repository for analyses performed in "NeMO Analytics: A Compendium of Transcript
 
 Interactive, public data exploration resources can be found at: https://nemoanalytics.org/landing/neocortex/
 
-Listing of datasets in NeMO Analytics: https://docs.google.com/spreadsheets/d/1xag_73Y1xydcCUnDYwn8rlF2rEbbMdTw/
-
 Data aquisition from NeMO Anlaytics and Joint decomposition performed for analysis in Figures 1, 2 & 3: SJDcode_Figure1n2n3.R
 
 Data aquisition from NeMO Anlaytics and Joint decomposition performed for analysis in Figures 4, 5, & 6: SJDcode_Figure4n5n6.R
