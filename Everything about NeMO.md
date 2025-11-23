@@ -80,7 +80,7 @@ Step 2 of the NeMO workflow is mostly conducted offline, where users can identif
 ---
 
 ### 3. Format standardizing and NeMO output packaging 
-`Counts.IN.SeuratDimRedNeMO.OUT.TRIM.R` is a R function we have implemented in the NeMO workflow to standardize the multi-omics datasets format and package them into `NeMOanalytics.org` compatible outputs for uploading. Details about how to use the function can be found in `Counts.IN.SeuratDimRedNeMO.OUT.TRIM.md`. 
+`exprs.IN_NeMO.OUT.R` is a R function we have implemented in the NeMO workflow to standardize the multi-omics datasets format and package them into `NeMOanalytics.org` compatible outputs for uploading. Details about how to use the function can be found in `exprs.IN_NeMO.OUT.md`. 
 
 ---
 
