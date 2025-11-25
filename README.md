@@ -27,7 +27,7 @@ Installation instructions and code for projection analysis using projectR (https
 
 R function for getting data into a format that can be uploaded to NeMO Analytics: exprs.IN_NeMO.OUT.R
 
-python function for getting data into a format that can be uploaded to NeMO Analytics: **** Qingjie's FUNCTION HERE ****
+python function for getting .h5ad data into a format that can be uploaded to NeMO Analytics: h5ad_NeMO
 
 youtube playlist for NeMO Analytics tutorials: https://www.youtube.com/playlist?list=PLbeFhDgIkXxe0G1hzEB_vLSP-5qqesNQj
 
