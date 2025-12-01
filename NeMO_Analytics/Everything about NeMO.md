@@ -82,13 +82,15 @@ Step 2 of the NeMO workflow is mostly conducted offline, where users can identif
 ### 3. Format standardizing and NeMO output packaging 
 `exprs.IN_NeMO.OUT.R` is a R function we have implemented in the NeMO workflow to standardize the multi-omics datasets format and package them into `NeMOanalytics.org` compatible outputs for uploading. Details about how to use the function can be found in `exprs.IN_NeMO.OUT.md`. 
 
+In parallel to the R function `exprs.IN_NeMO.OUT.R`, we have also included the NeMO function written in a set of Python scripts for easy handling of large h5ad files. More details about how to run the Python version can be found in NeMO_Analytics/h5ad_NeMO/h5ad_NeMO.md
+
 ---
 
 ### 4. Upload output to NeMO analytics platform
 
 **4.1 Output from the NeMO function**
 
-Running the NeMO function will generate four outputs in the designated directory. Download the .tar.gz file and the .xlsx for uploading it onto NEMO
+Running the NeMO functions (either the R version or the Python version) will generate four outputs in the designated directory. Download the .tar.gz file and the .xlsx for uploading it onto NEMO
 
 <img width="450" height="122" alt="image" src="https://github.com/user-attachments/assets/5380585e-f975-4cc4-a0a6-92bc3b4ca119" />
 
