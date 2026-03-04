@@ -9,11 +9,11 @@ comps=comps[,3:9]
 str(comps)
 
 # load gene groups -  files from: https://data.broadinstitute.org/gsea-msigdb/msigdb/release/2023.1.Hs/
-go<-  gmtPathways("/dcs05/carlo/legacy-dcl01-ccolantu/data/Explr/YashDIR/development_organoid_human/BigPaper/Jan23_Onwards/genesettests/sets/c5.go.v2023.1.Hs.symbols.gmt.txt")
-hallmark <-  gmtPathways("/dcs05/carlo/legacy-dcl01-ccolantu/data/Explr/YashDIR/development_organoid_human/BigPaper/Jan23_Onwards/genesettests/sets/h.all.v2023.1.Hs.symbols.gmt.txt")
-kegg <-  gmtPathways("/dcs05/carlo/legacy-dcl01-ccolantu/data/Explr/YashDIR/development_organoid_human/BigPaper/Jan23_Onwards/genesettests/sets/c2.cp.kegg.v2023.1.Hs.symbols.gmt.txt")
-tft <-  gmtPathways("/dcs05/carlo/legacy-dcl01-ccolantu/data/Explr/YashDIR/development_organoid_human/BigPaper/Jan23_Onwards/genesettests/sets/c3.tft.v2023.1.Hs.symbols.gmt.txt")
-load("/dcs05/carlo/legacy-dcl01-ccolantu/data/Explr/YashDIR/development_organoid_human/BigPaper/Jan23_Onwards/genesettests/sets/CtxDiseaseGeneListsPLUS.RData")# from https://pubmed.ncbi.nlm.nih.gov/40634286/
+go<-  gmtPathways("/path/c5.go.v2023.1.Hs.symbols.gmt.txt")
+hallmark <-  gmtPathways("/path/h.all.v2023.1.Hs.symbols.gmt.txt")
+kegg <-  gmtPathways("/path/c2.cp.kegg.v2023.1.Hs.symbols.gmt.txt")
+tft <-  gmtPathways("/path/c3.tft.v2023.1.Hs.symbols.gmt.txt")
+load("/path/CtxDiseaseGeneListsPLUS.RData")# from https://pubmed.ncbi.nlm.nih.gov/40634286/
 names(CtxDiseaseGeneLists)=paste('DiseaseLists',names(CtxDiseaseGeneLists),sep='_')
 names(tft)=paste('TFtargets',names(tft),sep='_')
 
