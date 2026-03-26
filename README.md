@@ -1,6 +1,6 @@
 # NeocortexDevelopment_Sonthalia2024
 
-Repository for analyses performed in "NeMO Analytics: A Compendium of Transcriptomic Data for the Exploration of Neocortical Development" (https://doi.org/10.1101/2024.02.26.581612).
+Repository for analyses performed in "NeMO Analytics: A Compendium of Transcriptomic Data for the Exploration of Neocortical Development" (https://www.nature.com/articles/s41593-026-02204-4).
 
 10min video summary of our manuscript: https://youtu.be/IE3itucbig4
 
