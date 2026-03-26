@@ -2,7 +2,7 @@
 
 Repository for analyses performed in "NeMO Analytics: A Compendium of Transcriptomic Data for the Exploration of Neocortical Development" (https://www.nature.com/articles/s41593-026-02204-4).
 
-10min video summary of our manuscript: https://youtu.be/IE3itucbig4
+Videos summarizing main findings in our manuscript: https://www.youtube.com/playlist?list=PLbeFhDgIkXxcTRt3H4Y5XFwpPQKM_tWQY
 
 Interactive, public data exploration resources can be found at: https://nemoanalytics.org/landing/neocortex/
 
