@@ -12,25 +12,17 @@
 
 GeneCart2idCols=function(tbl=NA,IDcol="gene",IDtype="symbol",IDspec="human",removeDUPgenesymbol=FALSE,removeDUPensembl=TRUE,useNewestVersion=TRUE){
 
-# if(IDspec!="human"&IDspec!="mouse"&IDspec!="zebrafish"){print("this function only works for mouse or human or zebrafish currently - see function comments for more info.");return(NULL)}
-
 library(SJD)
 IDcolNUM=which(colnames(tbl)==IDcol)
 
 if(IDtype=="symbol"){
 moreIDs=getMatch(genes=tbl[,IDcolNUM],inSpecies=IDspec,inType=IDtype,newSpecies=IDspec,useNewestVersion=useNewestVersion)
 tbl2=cbind(moreIDs$ensembl_gene_id,tbl[,IDcolNUM],tbl[,-IDcolNUM])
-# if(IDspec=="human"){tbl2=cbind(moreIDs$ensembl_gene_id,tbl[,IDcolNUM],tbl[,-IDcolNUM])}
-# if(IDspec=="mouse"){tbl2=cbind(moreIDs$ensembl_gene_id,tbl[,IDcolNUM],tbl[,-IDcolNUM])}
-# if(IDspec=="zebrafish"){tbl2=cbind(moreIDs$ensembl_gene_id,tbl[,IDcolNUM],tbl[,-IDcolNUM])}
 }
 
 if(IDtype=="ensembl"){
 moreIDs=getMatch(genes=tbl[,IDcolNUM],inSpecies=IDspec,inType=IDtype,newSpecies=IDspec,useNewestVersion=useNewestVersion)
 tbl2=cbind(tbl[,IDcolNUM],moreIDs$external_gene_name,tbl[,-IDcolNUM])
-# if(IDspec=="human"){tbl2=cbind(tbl[,IDcolNUM],moreIDs$external_gene_name,tbl[,-IDcolNUM])}
-# if(IDspec=="mouse"){tbl2=cbind(tbl[,IDcolNUM],moreIDs$external_gene_name,tbl[,-IDcolNUM])}
-# if(IDspec=="zebrafish"){tbl2=cbind(tbl[,IDcolNUM],moreIDs$external_gene_name,tbl[,-IDcolNUM])}
 }
 
 colnames(tbl2)[1:2]=c("ensemblGeneID","GeneSymbol")
