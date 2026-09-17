@@ -1,21 +1,23 @@
 # tbl has to be a data.frame with IDs as chr and values as numeric
 # input table of loadings and 1 and only 1 id col (must be symbol or ensgID)
-# only good for mouse and human now - need to add correct getMatch output col names for other species b4 it will work for other species:
+# WAS only good for mouse and human now - need to add correct getMatch output col names for other species b4 it will work for other species - thinkj is should work for all species now
 GeneCart2idCols=function(tbl=NA,IDcol="",IDtype="",IDspec="",removeDUPgenesymbol=FALSE,removeDUPensembl=TRUE,useNewestVersion=FALSE){
-if(IDspec!="human"&IDspec!="mouse"){print("this function only works for mouse or human currently - see function comments for more info.");return(NULL)}
+#if(IDspec!="human"&IDspec!="mouse"){print("this function only works for mouse or human currently - see function comments for more info.");return(NULL)}
 library(SJD)
 IDcolNUM=which(colnames(tbl)==IDcol)
 
 if(IDtype=="symbol"){
 moreIDs=getMatch(genes=tbl[,IDcolNUM],inSpecies=IDspec,inType=IDtype,newSpecies=IDspec,useNewestVersion=useNewestVersion)
-if(IDspec=="human"){tbl2=cbind(moreIDs$Gene.stable.ID.human,tbl[,IDcolNUM],tbl[,-IDcolNUM])}
-if(IDspec=="mouse"){tbl2=cbind(moreIDs$Gene.stable.ID.mouse,tbl[,IDcolNUM],tbl[,-IDcolNUM])}
+#if(IDspec=="human"){tbl2=cbind(moreIDs$Gene.stable.ID.human,tbl[,IDcolNUM],tbl[,-IDcolNUM])}
+#if(IDspec=="mouse"){tbl2=cbind(moreIDs$Gene.stable.ID.mouse,tbl[,IDcolNUM],tbl[,-IDcolNUM])}
+tbl2=cbind(moreIDs$ensembl_gene_id,tbl[,IDcolNUM],tbl[,-IDcolNUM])
 }
 
 if(IDtype=="ensembl"){
 moreIDs=getMatch(genes=tbl[,IDcolNUM],inSpecies=IDspec,inType=IDtype,newSpecies=IDspec,useNewestVersion=useNewestVersion)
-if(IDspec=="human"){tbl2=cbind(tbl[,IDcolNUM],moreIDs$HGNC.symbol.human,tbl[,-IDcolNUM])}
-if(IDspec=="mouse"){tbl2=cbind(tbl[,IDcolNUM],moreIDs$MGI.symbol.mouse,tbl[,-IDcolNUM])}
+#if(IDspec=="human"){tbl2=cbind(tbl[,IDcolNUM],moreIDs$HGNC.symbol.human,tbl[,-IDcolNUM])}
+#if(IDspec=="mouse"){tbl2=cbind(tbl[,IDcolNUM],moreIDs$MGI.symbol.mouse,tbl[,-IDcolNUM])}
+tbl2=cbind(tbl[,IDcolNUM],moreIDs$external_gene_name,tbl[,-IDcolNUM])
 }
 
 colnames(tbl2)[1:2]=c("ensemblGeneID","GeneSymbol")
