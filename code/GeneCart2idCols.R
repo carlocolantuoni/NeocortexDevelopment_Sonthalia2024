@@ -4,7 +4,6 @@
 GeneCart2idCols=function(tbl=NA,IDcol="",IDtype="",IDspec="",removeDUPgenesymbol=FALSE,removeDUPensembl=TRUE,useNewestVersion=FALSE){
 
 if(IDspec!="human"&IDspec!="mouse"){print("this function only works for mouse or human currently - see function comments for more info.");return(NULL)}
-  
 library(SJD)
 IDcolNUM=which(colnames(tbl)==IDcol)
 
