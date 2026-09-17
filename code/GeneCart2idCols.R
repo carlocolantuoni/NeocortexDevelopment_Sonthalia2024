@@ -1,8 +1,13 @@
 # tbl has to be a data.frame with IDs as chr and values as numeric
 # input table of loadings and 1 and only 1 id col (must be symbol or ensgID)
-# WAS only good for mouse and human now - need to add correct getMatch output col names for other species b4 it will work for other species - thinkj is should work for all species now
+# WAS only good for mouse and human now - need to add correct getMatch output col names for other species b4 it will work for other species - think it should work for all species now
+
+
 GeneCart2idCols=function(tbl=NA,IDcol="",IDtype="",IDspec="",removeDUPgenesymbol=FALSE,removeDUPensembl=TRUE,useNewestVersion=FALSE){
+
+
 #if(IDspec!="human"&IDspec!="mouse"){print("this function only works for mouse or human currently - see function comments for more info.");return(NULL)}
+
 library(SJD)
 IDcolNUM=which(colnames(tbl)==IDcol)
 
